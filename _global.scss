@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    background-color: $bgcolor;
+  }
+  header {
+    border: 1px solid $bordes;
+  }
+  main {
+    ul {
+      list-style-type: none;
+    }
+  
+    @for $i from 1 through 10 {
+      ul li:nth-child(#{$i}) {
+        color: lighten($base-color, $i * 5%);
+      }
+    }
+  }body {
+    margin: 0;
+    background-color: $bgcolor;
+  }
+  header {
+    border: 1px solid $bordes;
+  }
+  main {
+    ul {
+      list-style-type: none;
+    }
+  
+    @for $i from 1 through 10 {
+      ul li:nth-child(#{$i}) {
+        color: lighten($base-color, $i * 5%);
+      }
+    }
+  }
